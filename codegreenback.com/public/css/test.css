@@ -1,0 +1,164 @@
+#output {
+	border: 1px solid #ada9a8;
+	height: 600px;
+    position: relative;
+    box-shadow: 5px 10px 13px #888888;
+
+}
+
+#TestCaseOption{
+	padding-left: 0px;
+	height: 585px;
+	overflow-y: scroll;
+	overflow-x: hidden; ;
+	border-right: 1px solid #ada9a8;
+}
+
+#editorinput {
+        border: 1px solid #d4c4c3;
+        height: 150px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+#editorYourOutput {
+        border: 1px solid #d4c4c3;
+        height: 150px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+#editorExpectedOutput {
+        border: 1px solid #d4c4c3;
+        height: 150px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+#LanguageSelector {
+    border: 1px solid #d4c4c3;
+    width: 150px;
+    background:#f2f2f2;
+    height: 25px;
+}
+
+#LanguageOption{
+   background: #f2f2f2;
+}
+
+.testCase {
+    width: 195px;
+    height: 60px;
+    display: block;
+    padding: 20px 30px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    font-size: 19px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.fail{
+    background: #333333;
+    color: #EC4D37;
+}
+
+#active{
+    background: white;
+    color: #353836;
+}
+
+.pass{
+    background: #00b51b;
+    color: white;
+}
+
+.testCase:hover {
+    color: #fff;
+    transition: 0.4s;
+    background:  rgba(0,204,153,0.7);
+    cursor: pointer;
+}
+
+#outputContainer{
+    padding-left: 40px;
+}
+
+.buttonn{
+    height: 50px;
+    width: 200px;
+    
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 5px 10px 13px #888888;
+}
+
+.successs{
+    background: green;
+    color: white;
+}
+
+.failuree{
+    background: #575757;
+    color: white;
+}
+
+.buttonn:hover{
+    cursor: pointer;
+}
+
+.buttonn:active{
+    box-shadow: 2px 4px 5px #888888;
+}
+
+.btntext{
+
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    
+
+}
+
+.result{
+
+    height: 50px;
+    width: 100%;
+    border: 1px solid #d4c4c3;
+
+
+}
+
+.progress{
+    height: 5px;
+    width: 400px;
+    border: 1px solid rgba(0,204,153,0.7);
+    
+}
+
+.actualProgress{
+    height: 100%;
+    width:75%;
+    font-weight: bolder;
+    background: rgba(0,204,153,0.7);
+}
+
+.onlineUsers{
+    height: 400px;
+    width: 260px;
+    border: 1px solid #a1a1a1;
+}
+.onlineHeader{
+    border-bottom: 1px solid #a1a1a1;
+}

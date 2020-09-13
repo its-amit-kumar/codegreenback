@@ -1,0 +1,421 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#loader {
+    margin: 0 auto;
+    margin-top:20vh;
+    display: none;
+}
+
+#loader img {
+    border-radius: 50%;
+    width: 4.5vw;
+    background-color: white;
+}
+
+#setting-main {
+    margin-top: 10px;
+    width: 70vw;
+    height: 100vh;
+    /* background-color: khaki; */
+    display: flex;
+    margin: 0 auto;
+}
+
+#s-side-panel {
+    width: 23%;
+    min-height: 80%;
+    /* background-color: lawngreen; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 0.8px solid rgba(0, 0, 0, 0.4);
+    font-size: 1.5vw;
+}
+
+#s-main-body {
+    width: 77%;
+    min-height: 80%;
+    /* background-color: lightpink; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 0.8px solid rgba(0, 0, 0, 0.4);
+
+
+}
+
+.s-panel-but {
+    padding: 10px;
+    /* background-color: mediumaquamarine; */
+    font-size: 1.5vw;
+    width: 100%;
+    text-align: center;
+    height: 7vh;
+    cursor: pointer;
+}
+
+.s-panel-but:hover {
+    background-color: rgb(240, 240, 240);
+    border-left: 3px solid #18183b;
+}
+
+.s-active {
+    border-left: 3px solid #18183b;
+    font-weight: 8px;
+    background-color: rgb(240, 240, 240);
+}
+
+
+/*........... profile div.................... */
+#s-profile {
+    width: 70%;
+    /* height: 80%; */
+    /* background-color: navy; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+#s-user-image {
+    width: 5vw;
+    border-radius: 50%;
+}
+
+#s-profile-header {
+    width: 100%;
+    display: flex;
+    /* background-color: orange; */
+    margin-top: 20px;
+    padding: 15px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+
+#s-profile-main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.s-profile-input-div {
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 5vh; */
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+.s-profile-input {
+    width: 90%;
+    height: 5vh;
+    padding: 10px;
+
+}
+
+.s-profile-input:hover {
+    box-shadow: -0px 0px 15px #2b2f52;
+}
+
+.s-profile-input:focus {
+    font-size: 20px;
+     box-shadow: -0px 0px 15px #2b2f52;
+}
+
+#about {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 10vh;
+}
+
+#s-email {
+    width: 90%;
+    height: 5vh;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.s-profile-input-radio {
+    float: left;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.s-profile-input-radio:focus {
+    box-shadow: -0px 0px 15px #2b2f52;
+}
+
+.s-content {
+    display: none;
+    /* width: 90%; */
+    margin: 0 auto;
+    /* background-color: lawngreen; */
+}
+
+
+/* .............change Password ............... */
+
+#s-changePassword {
+    margin-top: 40px;
+    width: 80%;
+}
+
+#save-changes-cp-div, #save-changes-pro-div {
+    width: 100%;
+    /* background-color: lightcoral; */
+    text-align: center;
+    display: flex;
+    margin-top: 5vh;
+    /* justify-content: center; */
+}
+
+#save-changes-cp, #save-changes-profile {
+    width: 30%;
+    padding: 5px;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff ;
+    border-radius: 2px;
+    font-size: 1.6vw;
+    
+}
+
+.cursor-non {
+    cursor: not-allowed;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#save-changes-cp:hover, #savechanges-not-but:hover, #save-changes-profile:hover {
+    background-color: #1f8bff;
+}
+
+.addIcon {
+    display: inline;
+}
+
+#icon-correct, #icon-incorrect {
+    display: none;
+}
+
+
+#s-cp-errorMsg-div, #s-not-Msg-div {
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(202, 4, 4);
+    color: white;
+    display: none;
+    text-align: center;
+    margin-top: 15vh;
+    border-radius: 10px;
+}
+
+
+/* ........................ Notifications..................... */
+
+#s-notification {
+    width: 80%;
+    /* height: 50vh; */
+    /* background-color: turquoise; */
+    margin-top: 7vh;
+}
+
+.s-notification-div {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    /* background-color:forestgreen;  */
+    margin-bottom: 35px;   
+    justify-content: center;
+    align-items: center;
+}
+
+#savechanges-notification-div {
+    width: 50%;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+#savechanges-not-but {
+    width: 60%;
+    /* width: 30%; */
+    padding: 5px;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff ;
+    border-radius: 2px;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+#error-icon {
+    display: none;
+}
+
+
+
+/* photo uplaod modal */
+
+#image_demo {
+    background-color: rgba(255, 252, 238, 0.836);
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+#image-content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#modal-body-image {
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+}
+
+#modal-dialog-image{
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#modal-content-image {
+    width: 55vw;
+}
+
+.modal-header-image {
+    width: 100%;
+    background-color: #18183b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /* height: 7vh; */
+    padding: 15px;
+}
+
+#modal-image-upload-but {
+    width: 100%;
+    /* background-color: rgb(36, 255, 233); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 3vh;
+}
+
+.crop_image {
+    background-color: tomato;
+    color: white;
+    margin: 0 auto;
+}
+
+.crop_image:hover {
+    background-color: red;
+}
+
+
+
+/* ....transactions............. */
+
+/* #s-codecoins {
+    width: 100%;
+    padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */

@@ -1,0 +1,23 @@
+PHP Notice:  Undefined index: to in /var/www/codegreenback.com/Chat/src/socket.php on line 188
+PHP Notice:  Undefined index: cc in /var/www/codegreenback.com/Chat/src/socket.php on line 196
+PHP Notice:  Undefined index: cc in /var/www/codegreenback.com/Chat/src/socket.php on line 201
+PHP Notice:  Undefined index: _vid in /var/www/codegreenback.com/Chat/src/socket.php on line 202
+PHP Notice:  Undefined index: to in /var/www/codegreenback.com/Chat/src/socket.php on line 237
+PHP Notice:  Undefined index:  in /var/www/codegreenback.com/Chat/src/socket.php on line 237
+PHP Fatal error:  Uncaught Error: Call to a member function send() on null in /var/www/codegreenback.com/Chat/src/socket.php:237
+Stack trace:
+#0 /var/www/codegreenback.com/Chat/vendor/cboden/ratchet/src/Ratchet/WebSocket/WsServer.php(75): Socket->onMessage(Object(Ratchet\WebSocket\WsConnection), '{"cmd":"challen...')
+#1 /var/www/codegreenback.com/Chat/vendor/cboden/ratchet/src/Ratchet/WebSocket/WsServer.php(131): Ratchet\WebSocket\WsServer->Ratchet\WebSocket\{closure}(Object(Ratchet\WebSocket\WsConnection), Object(Ratchet\RFC6455\Messaging\Message))
+#2 /var/www/codegreenback.com/Chat/vendor/ratchet/rfc6455/src/Messaging/MessageBuffer.php(200): Ratchet\WebSocket\WsServer->Ratchet\WebSocket\{closure}(Object(Ratchet\RFC6455\Messaging\Message))
+#3 /var/www/codegreenback.com/Chat/vendor/ratchet/rfc6455/src/Messaging/MessageBuffer.php(153): Ratchet\RFC6455\Messaging\MessageBuffer->processData('\x81\xB2\xB3 \x86\xE7\xC8\x02\xE5\x8A\xD7\x02\xBC\xC5\xD0...')
+#4 /var/www/codegreenback.com/Chat/vendor/cboden/ratchet/src/Ratchet/WebSocket in /var/www/codegreenback.com/Chat/src/socket.php on line 237
+PHP Notice:  Undefined index: to in /var/www/codegreenback.com/Chat/src/socket.php on line 188
+PHP Notice:  Undefined index: to in /var/www/codegreenback.com/Chat/src/socket.php on line 253
+PHP Notice:  Undefined index:  in /var/www/codegreenback.com/Chat/src/socket.php on line 253
+PHP Fatal error:  Uncaught Error: Call to a member function send() on null in /var/www/codegreenback.com/Chat/src/socket.php:253
+Stack trace:
+#0 /var/www/codegreenback.com/Chat/vendor/cboden/ratchet/src/Ratchet/WebSocket/WsServer.php(75): Socket->onMessage(Object(Ratchet\WebSocket\WsConnection), '{"cmd":"challen...')
+#1 /var/www/codegreenback.com/Chat/vendor/cboden/ratchet/src/Ratchet/WebSocket/WsServer.php(131): Ratchet\WebSocket\WsServer->Ratchet\WebSocket\{closure}(Object(Ratchet\WebSocket\WsConnection), Object(Ratchet\RFC6455\Messaging\Message))
+#2 /var/www/codegreenback.com/Chat/vendor/ratchet/rfc6455/src/Messaging/MessageBuffer.php(200): Ratchet\WebSocket\WsServer->Ratchet\WebSocket\{closure}(Object(Ratchet\RFC6455\Messaging\Message))
+#3 /var/www/codegreenback.com/Chat/vendor/ratchet/rfc6455/src/Messaging/MessageBuffer.php(153): Ratchet\RFC6455\Messaging\MessageBuffer->processData('\x81\xB2\x10\x95\x8D\xF9k\xB7\xEE\x94t\xB7\xB7\xDBs...')
+#4 /var/www/codegreenback.com/Chat/vendor/cboden/ratchet/src/Ratchet/WebSocket/WsSer in /var/www/codegreenback.com/Chat/src/socket.php on line 253

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.center, #wrap {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  #wrap {
+    width: 60%;
+    height: auto;
+  
+  }
+  #wrap .card {
+    width: 32%;
+    height: 40vh;
+    background: #f3fffd;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
+    float: left;
+    position: relative;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  #wrap .card:nth-child(2) {
+    margin: 0 2%;
+  }
+  #wrap .card:hover .thumb {
+    top: -25%;
+  }
+  #wrap .card .thumb {
+    width: 90%;
+    height: 20vh;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 10;
+    -webkit-transition: 0.3s cubic-bezier(0.67, -0.12, 0.45, 1.5);
+    transition: 0.3s cubic-bezier(0.67, -0.12, 0.45, 1.5);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+  }
+  /*CARD IMAGE*/
+  #wrap .card #one {
+    background-image: url("/public/img/002/80.jpeg");
+    width: 100%;
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    
+  }
+  #wrap .card #one1 {
+    background-image: url("/public/img/002/800.png");
+    width: 100%;
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    
+  }
+  #wrap .card #two {
+    background-image: url("/public/img/002/160.png");
+    width: 100%;
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+  }
+  #wrap .card #two2 {
+    background-image: url("/public/img/002/2000.png");
+    width: 100%;
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+  }
+  #wrap .card #three {
+    background-image: url("/public/img/002/400.png");
+    width: 100%;
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+  }
+  #wrap .card #three3 {
+    background-image: url("/public/img/002/elite.jpeg");
+    width: 100%;
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+  }
+  /*END IMAGE CARD*/
+  #wrap .card .option {
+    width: 100%;
+    /* background-color: yellow; */
+    height: 30px;
+    margin: 50px auto 0 auto;
+  }
+  
+  #wrap .card h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight: 700;
+    /* margin-top: 6em; */
+    /* position: absolute; */
+    /* top : 55%; */
+    /* left: 35%; */
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #wrap .card hr {
+    width: 20%;
+    opacity: 0.5;
+    background-color: teal;
+    margin: 10px auto;
+    /* position: absolute; */
+    /* top : 69%; */
+  }
+  #wrap .card .price {
+    font-size: 1em;
+    font-weight: 700;
+    color: #4d4d4d;
+       /* position: absolute; */
+    /* top : 70%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+ 
+  #wrap .card .add, #wrap .card .buy {
+    width: 50%;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 8px;
+    /* margin-bottom: 10px; */
+    /* position: absolute; */
+    /* top : 80%; */
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+
+  
+  #wrap .card .buy {
+    
+    background: tomato;
+  }
+  #wrap .card .buy:hover {
+    background: rgb(184, 28, 0);
+  }
+  
+  @media screen and (max-width: 480px) {
+    #wrap {
+      /* top: 10%; */
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+    }
+    #wrap .card {
+      width: 100%;
+    }
+    #wrap .card:nth-child(2) {
+      margin: 50px 0;
+    }
+    #wrap .card:nth-child(3) {
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+.cards-two{
+  margin-top: 27em;
+   margin-bottom: 10em;
+}
+@media(max-width:576px){
+
+
+.cards-two
+{
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 55em; */
+  margin-bottom: 2em;
+}
+
+.cards-two .card{
+  margin-top: 30em;
+  margin-bottom: 5em;
+}
+
+
+.cards-two  .last-card {
+ margin-top: 0em; 
+}
+}
+
+.cards-two {
+  display: block;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+
+
+  /* .........................spinner ............................. */
+
+
+/*Huge thanks to @tobiasahlin at http://tobiasahlin.com/spinkit/ */
+.spinner1 {
+  margin:  auto 0;
+  /* width: 70px; */
+  position: absolute;
+  text-align: center;
+  top:50%;
+  right: 50%;
+}
+
+.spinner1 > div {
+  width: 15px;
+  height: 15px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner1 .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner1 .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
+#footer-div {
+	margin-top:70rem;
+}
+
+@media screen and (max-width: 600px)
+{
+	#footer-div {
+		margin-top:125rem;
+	}
+}

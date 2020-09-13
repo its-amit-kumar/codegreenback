@@ -1,0 +1,38 @@
+#question{
+	height: 350px;
+}
+
+#format{
+	height: 150px;
+}
+
+#editor1 {
+        border: 1px solid #d4c4c3;
+        height: 150px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+#editor2 {
+        border: 1px solid #d4c4c3;
+        height: 150px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+#editordiv{
+	padding-top: 50px;
+}
+
+
+#editor { 
+        position: relative;
+        top: 20px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 500px;
+    }

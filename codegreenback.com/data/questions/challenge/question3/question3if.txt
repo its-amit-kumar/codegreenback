@@ -1,0 +1,1 @@
+<ul><li>An int indicating the height of the staircase</li></ul>

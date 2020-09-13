@@ -1,0 +1,1 @@
+<div>1&lt;=T&lt;=74<br>3&lt;=N&lt;=19<br>The element of the sequence will lie in between[1,109] , both inclusive.</div>

@@ -1,0 +1,17 @@
+for t in range(int(input())):
+    n,q=map(int,input().split())
+    s=input()
+    alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    numbers=[]
+    for i in alphabet:
+        num=s.count(i)
+        numbers.append(num)
+    for i in range(q):
+        ct=0
+        c=int(input())
+        for j in numbers:
+            if j>c:
+                ct+=j-c
+        print(ct)
+                
+        

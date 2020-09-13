@@ -1,0 +1,1 @@
+<div>The number of elements in the array&nbsp; <strong>N</strong><br>The elements of the array of integers in a single line .<br>The integer to which the summation should equal <strong>S</strong><br><br></div>

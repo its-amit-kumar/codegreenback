@@ -1,0 +1,1 @@
+<div>Multiply <strong>2 numbers</strong> and display its output</div>

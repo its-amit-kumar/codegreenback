@@ -1,0 +1,60 @@
+fs.js:646
+  return binding.open(pathModule._makeLong(path), stringToFlags(flags), mode);
+                 ^
+
+Error: ENOENT: no such file or directory, open '/etc/letsencrypt/live/www.codegreenback.ml/privkey.pem'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at Object.<anonymous> (/var/www/codegreenback.com/Faceoff/server.js:9:11)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+fs.js:646
+  return binding.open(pathModule._makeLong(path), stringToFlags(flags), mode);
+                 ^
+
+Error: ENOENT: no such file or directory, open '/etc/letsencrypt/live/www.codegreenback.ml/privkey.pem'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at Object.<anonymous> (/var/www/codegreenback.com/Faceoff/server.js:9:11)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+fs.js:646
+  return binding.open(pathModule._makeLong(path), stringToFlags(flags), mode);
+                 ^
+
+Error: ENOENT: no such file or directory, open '/etc/letsencrypt/live/www.codegreenback.ml/privkey.pem'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at Object.<anonymous> (/var/www/codegreenback.com/Faceoff/server.js:9:11)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+fs.js:646
+  return binding.open(pathModule._makeLong(path), stringToFlags(flags), mode);
+                 ^
+
+Error: ENOENT: no such file or directory, open '/etc/letsencrypt/live/www.codegreenback.ml/privkey.pem'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at Object.<anonymous> (/var/www/codegreenback.com/Faceoff/server.js:9:11)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)

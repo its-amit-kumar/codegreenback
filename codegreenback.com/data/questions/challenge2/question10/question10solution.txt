@@ -1,0 +1,42 @@
+import java.util.*;
+import java.io.*;
+import java.math.BigInteger;
+import java.lang.*;
+class prac{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        char ch=' ';
+        char ch1=' ';
+        int x=0,y=0,i;
+        for(int j=0;j<t;j++)
+        {
+            x=0;y=0;
+            ch1=' ';ch=' ';
+            int n=sc.nextInt();
+            sc.nextLine();
+            String s=sc.nextLine();
+            for(i=0;i<n;i++)
+            {
+              ch=s.charAt(i);
+              if(ch=='L'&&(ch1=='L'||ch1=='R') || (ch=='R'&&(ch1=='L'||ch1=='R')))
+                 { continue; }
+              else if(ch=='U'&&(ch1=='U'||ch1=='D') || (ch=='D'&&(ch1=='U'||ch1=='D')))
+                 { continue; }
+              else if(ch=='L')
+                 { x=x-1;}
+              else if(ch=='R')
+                 { x=x+1;}
+              else if(ch=='U')
+                 { y=y+1; }
+              else if(ch=='D')
+                 { y=y-1; }    
+               
+               ch1=ch;   
+            }
+            System.out.println(x+" "+y);
+            
+        }
+    }
+}

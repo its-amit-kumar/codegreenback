@@ -1,0 +1,1 @@
+<div><br>Output</div><div>For each query, print a single line containing one integer ― the minimum size of the pending queue.<br><br></div>

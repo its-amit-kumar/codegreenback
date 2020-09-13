@@ -1,0 +1,1 @@
+<ul><li>An integer which represents the <strong>height</strong> of the staircase</li></ul>

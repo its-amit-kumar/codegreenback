@@ -1,0 +1,1266 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+#searchedUserPane {
+    /* background-color: rgb(212, 212, 212); */
+    background-color: whitesmoke;
+    border-top: 10px solid #18183b;
+    /* height: 70vh; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* box-shadow: ; */
+    align-items: center;
+      /* background-image: linear-gradient(to bottom, rgb(216, 216, 216), rgb(219, 216, 216)); */
+}
+
+#searchedUserPane-content {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  /* padding-top: 20px; */
+  
+
+  margin-top:20px; 
+  width:100%;
+
+}
+
+#searchedUserMain {
+    /* background-color: rgb(251, 255, 214); */
+          background-image: linear-gradient(to bottom, rgb(255, 250, 244), rgb(253, 242, 226));
+    height: 80vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+#searchedUser-username {
+    margin-top: 10px;
+}
+
+#searchedUser-name {
+    /* border-top: 1px solid black; */
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#searchedUser-rel {
+    display: flex;
+    /* background-color:green ;  */
+    width:100%; 
+    /* height: 7vh; */
+    margin-top:20px;justify-content:space-between
+}
+
+#searchedUserPanel-dropdown-btn {
+    /* background-color: brown; */
+    height: 100%;
+    /* width: 40%; */
+    padding: 10px;
+    margin:0;
+    margin-left: 0;
+    /* margin-left: 10%; */
+    /* padding: 0 auto; */
+    position: relative;
+    /* display: inline-block; */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Button */
+.searchedUser-dropbtn {
+  background-color: rgb(243, 236, 255);
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.searchedUser-dropbtn:hover, .searchedUser-dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.searchedUser-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.searchedUserdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.searchedUserdropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.searchedUserdropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.shows {display:block;}
+
+
+
+.zoomDiv {
+
+    /* display: inline-flex; */
+  /* padding: 50px; */
+  background-color: #18183b;
+  transition: transform .2s; /* Animation */
+  width: 10vw;
+  height: 15vh;
+  margin:10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #ddd;
+  text-align: center;
+  padding-top: 10px;
+  /* margin:25px; */
+  /* margin: 0 auto; */
+}
+
+
+.zoomDiv:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  
+}
+
+
+#recommended-Users-div {
+  min-width: 100%;
+  height: 100%;
+  /* background-color: darkblue; */
+  display: flex;
+  flex-direction: row;
+  /* display: table; */
+  overflow: hidden;
+
+}
+
+.recommended-user-card {
+  flex: none;
+  width: 200px !important;
+  /* border: 1px solid black; */
+
+  background-color: rgb(255, 255, 251);
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 5px;
+  position: relative;
+  cursor: pointer;
+  color: black;
+}
+
+.recommended-user-card a {
+  text-decoration: none;
+  color: #161616;
+}
+
+.recommended-user-card:hover{
+  animation-name: rec;
+  animation-duration:5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+}
+/* The animation code */
+@keyframes rec {
+  from {background-color: rgb(255, 255, 251);}
+  to {background-color: rgb(226, 243, 253);}
+  
+}
+
+
+#left-button {
+  position: absolute;
+  z-index: 1;
+  height: 200px;
+  width: 5%;
+  background-color: rgba(0,0,0,0.1);
+   font-size: 40px;
+  text-align: center;
+  padding-top: 9vh;
+  font-weight: bolder;
+}
+
+#left-button:hover , #right-button:hover {
+  animation-name: button;
+  animation-duration:1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes button {
+  from {background-color: rgba(0,0,0,0.1);}
+  to {background-color: #40514e;}
+  
+}
+
+
+#right-button {
+  position: absolute;
+  /* position: relative; */
+  /* justify-self: right; */
+  /* margin-left: 95%; */
+  left: 95%;
+  z-index: 1;
+  height: 200px;
+  width: 5%;
+  background-color: rgba(0,0,0,0.1);
+  font-size: 40px;
+  text-align: center;
+  padding-top: 9vh;
+ 
+  font-weight: bolder;
+}
+
+
+.recommended-user-img {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+
+
+  
+}
+
+.recommended-user-info {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+#friendStatus {
+  background-color: #fcfbf0;
+  text-align: center;
+}
+
+#friendStatus h3 {
+  padding-top: 5px;
+}
+
+#selectChallenge {
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+#selectChallenge-title{
+  background-color: rgb(0, 92, 212);
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  
+}
+.modal-header{
+  background-color: #18183b;
+  color: #f1f1f1;
+}
+
+#selectChallenge button {
+  border: none;
+  width: 20vw ;
+  /* margin: 10px; */
+  height: 60px;
+  background-color: rgb(238, 238, 238);
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+#selectChallenge button:hover {
+  background-color: rgb(241, 101, 76);
+  font-size: 30px;
+}
+
+
+#selectCC {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ccValue {
+  margin:20px;
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  background-color: coral;
+}
+
+
+#back {
+  border: none;
+  background-color: crimson;
+  /* font-size: 20px; */
+  width: 30%;
+  /* float: left; */
+  margin:10px;
+  height: 20px;
+
+}
+
+#back button {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: maroon;
+}
+#back button:hover {
+  background-color: floralwhite;
+  color:black;
+}
+
+#sendChallengeRequest{
+  width: 70%;
+  /* float: left; */
+  border:none;
+  margin:10px;
+  height: 20px;
+}
+
+#sendChallengeRequest button{
+  width:100%;
+  font-size: 20px;
+  height: 50px;
+  border:none;
+  background-image: linear-gradient(to right, white, rgb(240, 125, 125));
+}
+ #sendChallengeRequest button:hover{
+   background-image: linear-gradient(to left , white, rgb(240,125,125));
+ }
+/* cc range slider */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: rgb(76, 122, 175);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#sendfriendReq {
+  width: 100%;
+  border: none;
+  background-color: rgb(243, 236, 255);
+  color: #18183b;
+  border-radius:0;
+}
+
+#undofriendReq {
+  width: 100%;
+  border: none;
+  background-color: rgb(243, 236, 255);
+  color: #18183b;
+  border-radius:0;
+}
+
+#sendfriendReq:hover, #undofriendReq:hover{
+  background-color: darkcyan;
+}
+
+#myDropdown {
+  background-color: blueviolet;
+  right: 0vw;
+}
+
+#myDropdown button {
+  width: 100%;
+  background-color: rgb(243, 236, 255);
+  border: none;
+  border-radius: 0;
+  color: #18183b;
+}
+
+#myDropdown button:hover {
+  background-color: aquamarine;
+}
+
+
+#challengeButton {
+  width: 90%;
+  margin-top: 10px;
+  border:none;
+  font-size: 20px;
+  background-color: rgb(113, 20, 220);
+  height: 50px;
+}
+
+#challengeButton:hover{
+  background-color: rgba(192, 3, 3, 0.959);
+}
+
+
+/* ......................loader.......................... */
+
+
+.overlay-loader, .overlay-loader-c3 {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(129, 129, 129,0.8);
+    z-index: 2;
+}
+
+.process-msg, .process-msg-c3  {
+  margin: 15px;
+  font-size: 2.5vw;
+  color: white;
+	line-height:25px;
+}
+
+.overlay__inner-loader {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.overlay__content-loader {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-loader {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-top-color: rgb(0, 0, 0);
+    animation: spin 1s infinite linear;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+/* custom alert */
+
+/* The Modal (background) */
+.customModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.customModal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.customClose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.customClose:hover,
+.customClose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*............. custom confirm box ........................ */
+.dialog-ovelay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 999999
+}
+.dialog-ovelay .dialog {
+    width: 400px;
+    margin: 100px auto 0;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-radius: 3px;
+    overflow: hidden
+}
+.dialog-ovelay .dialog header {
+    padding: 10px 8px;
+    background-color: #f6f7f9;
+    border-bottom: 1px solid #e5e5e5
+}
+.dialog-ovelay .dialog header h3 {
+    font-size: 14px;
+    margin: 0;
+    color: #555;
+    display: inline-block
+}
+.dialog-ovelay .dialog header .fa-close {
+    float: right;
+    color: #c4c5c7;
+    cursor: pointer;
+    transition: all .5s ease;
+    padding: 0 2px;
+    border-radius: 1px    
+}
+.dialog-ovelay .dialog header .fa-close:hover {
+    color: #b9b9b9
+}
+.dialog-ovelay .dialog header .fa-close:active {
+    box-shadow: 0 0 5px #673AB7;
+    color: #a2a2a2
+}
+.dialog-ovelay .dialog .dialog-msg {
+    padding: 12px 10px
+}
+.dialog-ovelay .dialog .dialog-msg p{
+    margin: 0;
+    font-size: 15px;
+    color: #333
+}
+.dialog-ovelay .dialog footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 8px 10px
+}
+.dialog-ovelay .dialog footer .controls {
+    direction: rtl
+}
+.dialog-ovelay .dialog footer .controls .button {
+    padding: 5px 15px;
+    border-radius: 3px
+}
+.button {
+  cursor: pointer
+}
+.button-default {
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    color: #5D5D5D;
+}
+.button-danger {
+    background-color: #f44336;
+    border: 1px solid #d32f2f;
+    color: #f5f5f5
+}
+.link {
+  padding: 5px 10px;
+  cursor: pointer
+}
+
+
+
+/* newcc */
+
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #fcfbf7;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #30e3ca;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #30e3ca;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+
+.searched-user-data {
+  margin-bottom: 100px;
+}
+
+
+.team-content {
+    position: absolute;
+    top : 45%;
+    /* left: 16%; */
+    width: 100%;
+    text-align: center;
+}
+
+
+/* cards */
+.zoom {
+
+    /* display: inline-flex; */
+  padding: 50px;
+  background-color: #18183b;
+  transition: transform .2s; /* Animation */
+  /* width: 200px;
+  height: 200px; */
+  margin-top:20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #ddd;
+  /* margin:25px; */
+  /* margin: 0 auto; */
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+.wrapper {
+   width: 100vw;
+   margin: 0 auto;
+   height: 400px;
+   background-color: #161616;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 767px) {
+   .wrapper {
+      height: 700px;
+   }
+}
+
+.content1 {
+   padding-top: 40px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+   .content1 {
+      padding-top: 300px;
+      flex-direction: column;
+   }
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 10vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+.cards {
+
+   max-width: 400px;
+   min-width: 200px;
+   height: 250px;
+   background-color: #18183b;
+   margin: 10px;
+   border-radius: 10px;
+   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+   border: 2px solid rgba(7, 7, 7, 0.12);
+   font-size: 16px;
+   transition: all 0.3s ease;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.icon {
+   margin: 0 auto;
+   width: 100%;
+   height: 80px;
+   max-width:80px;
+   background: linear-gradient(90deg, #99ffe6 0%, #00cc99 40%, white 60%);
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: black;
+   transition: all 0.8s ease;
+   background-position: 0px;
+   background-size: 200px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.cards .titles {
+   width: 100%;
+   margin: 0;
+   text-align: center;
+   margin-top: 30px;
+   color: white;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+}
+
+.cards .texts {
+   width: 100%;
+   margin: 0 auto;
+   font-size: 13px;
+   text-align: center;
+   margin-top: 20px;
+   color: white;
+   font-weight: 200;
+   letter-spacing: 2px;
+   opacity: 0;
+   max-height:0;
+   transition: all 0.3s ease;
+}
+
+.cards:hover {
+   height: 270px;
+}
+
+.card:hover .info {
+   height: 90%;
+}
+
+.cards:hover .texts {
+   transition: all 0.3s ease;
+   opacity: 1;
+   max-height:40px;
+}
+
+.cards:hover .icon {
+   background-position: -120px;
+   transition: all 0.3s ease;
+}
+
+.cards:hover .icon i {
+   background: linear-gradient(90deg, #18183b, #18183b);
+   -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+   opacity: 1;
+   transition: all 0.3s ease;
+}
+
+
+
+/* buttons on user pane */
+
+.searchedUser-dropdown {
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+}
+
+.challenge-but-div
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#challengeButton {
+    width: 100%;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.searchedUserdropdown-content {
+  /* display: none; */
+    position: absolute;
+    background-color: #f1f1f1;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+/* Dropdown Button */
+.searchedUser-dropbtn {
+    background-color: #fcfbf0;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.searchedUser-dropbtn:hover, .searchedUser-dropbtn:focus {
+    background-color: darkcyan;
+    }
+
+#friendStatus {
+    position: absolute;
+    bottom:20%;
+}
+
+
+#challengeButton {
+  border:none;
+  /* border-top : 0.5px solid blue; */
+  font-size: 20px;
+  /* background-color: rgb(113, 20, 220); */
+  background-color: #40514e;
+  
+  color: white;
+  height: 50px;
+}
+
+#challengeButton:hover{
+  
+  background-color: #30e3ca;
+}
+
+
+#sendfriendReq {
+  width: 100%;
+  border: none;
+  background-color: #fcfbf0;
+  color: #18183b;
+  border-radius:0;
+}
+
+#undofriendReq {
+  width: 100%;
+  border: none;
+  background-color: #fcfbf0;
+  color: #18183b;
+  border-radius:0;
+}
+
+#sendfriendReq:hover, #undofriendReq:hover{
+  background-color: darkcyan;
+}
+
+#myDropdown {
+  background-color: blueviolet;
+  right: 0vw;
+}
+
+#myDropdown button {
+  width: 100%;
+  background-color: rgb(243, 236, 255);
+  border: none;
+  border-radius: 0;
+  color: #18183b;
+}
+
+#myDropdown button:hover {
+  background-color: aquamarine;
+}
+
+
+/* online checkbox */
+.online-status
+{
+  width: 15px;
+  height: 15px;
+  background-color: rgb(47, 161, 47);
+  position: absolute;
+  border-radius: 50%;
+  top:43%;
+  border: 0.5px solid rgb(172, 172, 172);
+  left: 46%;
+   box-shadow: 0 0 0 2px #d3d3d3;
+}
+
+.online-active{
+  background-color:rgb(47, 161, 47); 
+}
+
+.ofline-active{
+  background-color: rgb(231, 231, 231);
+}
+
+
+
+
+/* .......................challenge3 request model .................. */
+
+/* The Modal (background) */
+.c3-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.c3-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  height: 40vh;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #30e3ca;
+  overflow: none;
+}
+
+.c3-header{
+
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+	
+}
+
+.c3-body {
+	/* position: absolute;
+	top: 30%; */
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+.c3-header h3{
+	font-size: 2em;
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+
+
+.c3-body p{
+	font-size: 25px;
+	color: #40514e;
+	
+}
+
+.c3-buttons-div{
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.c3-accept-button-div{
+	margin: 10px;
+}
+
+.c3-reject-button-div{
+
+	margin: 10px;
+}
+
+#c3-accept-but{
+	width: 10vw;
+	height: 5vh;
+	border: 0;
+	border-radius: 25px;
+	font-size: 1vw;
+	font-weight: bold;
+	background-color: #11999e;
+	color: white;
+}
+
+#c3-reject-but{
+	width: 10vw;
+	height: 5vh;
+	border: 0;
+	border-radius: 25px;
+	font-size: 1vw;
+	font-weight: bold;
+	background-color: #11999e;
+	color: white;
+}
+
+.c3-timer-div{
+	margin-top: 10px;
+	font-size: 3em;
+	width: 100%;
+	text-align: center;
+}
+
+#c3-accept-but:hover , #c3-reject-but:hover {
+  animation-name: button;
+  animation-duration:7s;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+}
+
+@keyframes button {
+  from {background-color: rgba(0,0,0,0.1);}
+  to {background-color: #40514e;}
+  
+}
+
+#c3-cc-bet{
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.c3-cc-img img{
+	border-radius: 50%;
+	width: 35px;
+	margin-right: 5px;
+}
+
+
+/* 
+
+#30e3ca
+
+#11999e
+
+#40514e
+
+*/
+
+/* Challenge3 request model ends */
+
+
+/* ......................loader.......................... */
+
+
+.overlay-loader-req-c3 {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(129, 129, 129,0.8);
+    z-index: 2000;
+}
+
+.process-msg-c3-req  {
+  margin: 15px;
+  font-size: 2.5vw;
+  color: white;
+}
+
+.overlay__inner-loader-req {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.overlay__content-loader-req {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-loader-req {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-top-color: rgb(0, 0, 0);
+    animation: spin 1s infinite linear;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

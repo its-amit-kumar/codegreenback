@@ -1,0 +1,2 @@
+<div>The Output will be all the subset which sum up to required sum<br>If no subset found print "<strong>none</strong>"</div>
+~                      

@@ -1,0 +1,1 @@
+<div>First line consists of a single Integer T , determining the total number of test cases. The description of T test cases follows.<br>The first line of each test case contains a single integer,n.<br>The second line consists n space separated distinct integers.</div>

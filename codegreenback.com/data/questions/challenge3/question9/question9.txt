@@ -1,0 +1,1 @@
+<div>A firm gives salary to there employes with the help of there phone numbers.<br>Given a <em>10 digit</em> contact number of an employee. Find the salary according to the <br>given conditions <br><br>1. The salary should be made by multiplying <strong>N</strong> adjacent digits<br>2. It Should be maximum</div>

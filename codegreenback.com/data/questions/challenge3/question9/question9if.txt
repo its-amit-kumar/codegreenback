@@ -1,0 +1,1 @@
+<div>First Line Should Contain a 10 DIGIT NUMBER<br>Second line should contain the number of adjacent digits <strong>N</strong></div>

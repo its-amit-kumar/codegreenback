@@ -1,0 +1,1 @@
+<div>For each test case, print out k space separated integers ,where k is the length of the final sequence. For each valid i,the i-th element of these integers should be the i-th element of the final sequence.</div>

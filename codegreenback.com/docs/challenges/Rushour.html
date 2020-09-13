@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGreenBack</title>
+    <link rel="stylesheet" href="https://www.codegreenback.com/docs/public/css/rushour.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/a5cdbcd94b.js"></script>
+
+
+
+
+
+</head>
+<body>
+
+
+
+    <div style="display: flex;align-items: center; position: fixed;top: 1%;">
+        <img src="https://www.codegreenback.com/public/img/1.png" alt="logo" width="60px" style="float: left; margin: 10px;">
+        <h2>CodeGreenBack</h2>
+    </div>
+
+ <nav class='animated bounceInDown'>
+        <ul>
+        <li class='sub-menu'><a href='#settings'>Challenges<div class='fa fa-caret-down right'></div></a>
+                        <ul>
+                                <li><a href='https://www.codegreenback.com/docs/challenges/TurnYourTurn'>TurnYourTurn</a></li>
+                                <li><a href='https://www.codegreenback.com/docs/challenges/Rushour'>Rushour</a></li>
+                                <li><a href='https://www.codegreenback.com/docs/challenges/faceoff'>Face/Off</a></li>
+
+                        </ul>
+        </li>
+
+        <li class='sub-menu'><a href='#settings'>Events<div class='fa fa-caret-down right'></div></a>
+                        <ul>
+                                <li><a href='#settings'>Trycode we will catch</a></li>
+
+                        </ul>
+        </li>
+
+        <li><a href='https://www.codegreenback.com/docs/elite/'>Elite Membership</a></li>
+        <li><a href='https://www.codegreenback.com/docs/privacypolicy/'>PrivacyPolicy</a></li>
+        <li><a href='https://www.codegreenback.com/docs/tnc/'>Terms &amp Conditions</a></li>
+        <li><a href='https://www.codegreenback.com/docs/cookiePolicy/'>Cookie Policy</a></li>
+        </ul>
+</nav>
+
+    
+
+
+    <div class="main-body">
+        <div class="p-title">
+            <p>Rushour</p>
+        </div>
+        <div class='p-1-div'>
+            <div class="p-1">
+                <p>
+                    Rushour is a 1 VS 1 challenge where you and your opponent have to solve all the problems in a time limit of 30 minutes. The one who solves the maximum correct questions in time span wins the challenge and gets the code coins.
+                </p>
+            </div>
+
+            <div style="width: 40%; display: flex; margin: 0;">
+                <img src="public/cclogo.jpeg" alt="" style="margin: 0;border-radius: 50%;" width="300px">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <!-- <h6>About</h6> -->
+            <img src="https://www.codegreenback.com/public/img/1.png" alt="logo" width="50px">
+
+            <p class="text-justify">CodeGreenBack <i>worth your while</i>
+            is a social competitive platform uniting coders to challenge each other in interactive challenges</p>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="#">Challenges</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">CodeCoins</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms &and Conditios</a></li>
+            </ul>
+            <h5><i>support@codegreenback.com</i></h5>
+          </div>
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+
+
+    <script>
+
+    $('.sub-menu ul').hide();
+$(".sub-menu a").click(function () {
+	$(this).parent(".sub-menu").children("ul").slideToggle("100");
+	$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+});
+</script>
+</body>
+</html>

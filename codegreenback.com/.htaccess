@@ -1,0 +1,76 @@
+#Enabling rewrite engine 
+Options +FollowSymLinks
+RewriteEngine on
+
+
+#error documenr
+
+ErrorDocument 404 /404.html
+
+# CONVERTING http://codegreenback.ml to http://www.codegreenback.ml
+#
+
+RewriteCond %{HTTP_HOST} ^codegreenback\.com [NC]
+RewriteRule ^(.*)$ https://www.codegreenback.com/$1 [L,R=301]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*(default|index)\.(html|php|htm)\ HTTP/ [NC]
+RewriteRule ^(([^/]+/)*)(default|main|index)\.(html|php|htm)$ https://www.codegreenback.com/$1 [L,R=301]
+
+# Rewrite user URLs
+#   Input:  user/NAME/
+#   Output: searched_user.php?search=NAME
+RewriteRule ^user/([a-zA-Z0-9]+)/?$ searched_user.php?search=$1
+
+
+#rewrite for userprofile
+# input : userprofile/
+# Output : profile.php
+
+RewriteRule ^userprofile/?$ profile.php [L]
+
+
+# rewrite for account settings
+#input AccountSettings/
+#Output : settings.php
+
+RewriteRule ^AccountSettings/?$ settings.php [L]
+
+# rewrite for home
+# input Home/
+#output : home.php
+
+RewriteRule ^Home/?$ index2.php [L]
+
+
+#rewrite rule for search page
+#input Compete/
+#output : search.php
+
+RewriteRule ^Compete/?$ search.php [l]
+
+# Rewrite for css
+# input : assets/file/
+#output : public/css/file.css
+RewriteRule ^assets/([a-zA-Z]+)/?$ /public/css/$1.css
+
+#Rewrite rule for js : /public/js/something.js
+#input : assets/plugins/file/
+#output : public/js/file.js
+RewriteRule ^assets/plugins/([a-zA-Z]+)/([0-9]+)/?$ /public/js/$1.js
+
+# Rewrite user docs
+#   Input:  docs/something/
+#   Output: something.html?
+RewriteRule ^docs/([a-zA-Z0-9]+)/?$ /docs/$1.html
+RewriteRule ^docs/challenges/([a-zA-Z0-9]+)/?$ /docs/challenges/$1.html
+
+
+# Preventing hotlinking
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https://www.codegreenback.com/.*$ [NC]
+RewriteRule .+.(gif|jpg|png|jpeg)$ - [F]
+
+
+
+RewriteRule ^Home/.* 404.html
+

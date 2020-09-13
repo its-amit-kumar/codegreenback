@@ -1,0 +1,5 @@
+<div>Given an array of numbers. you have to find all the <strong>subset </strong>of length 2 from that array which makes the <strong>desired sum </strong><br>equal to the given number <strong>n</strong> . If none of the subset match the required condition then print "<strong>none</strong>"<br><br></div><pre>Example :
+I<strong>nput:</strong> [] = {1,2,3,4,5,6,7} n = 9
+
+all the subset from start are with 2 element : {1,2}, {2,3}, {3,4}, {4,5}, {5,6}, {6,7}
+<br><strong>Output: </strong>{5,6}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;<br></pre><div>EXPLANATION :&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; only one subset is possible with that length i.e {4,5}<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4+5 = 9 (Required sum)<br><br>Example Input :&nbsp;<br>4<br>5<br>6<br>7<br>9<br>14<br><br>ouput:<br>{5,9}</div><div><br></div><div><br></div>

@@ -1,0 +1,58 @@
+.content{
+	display: flex;
+	flex-direction: column;
+	width: 64%;
+	margin-left: 18%;
+	justify-content: center;
+	height: 100%;
+}
+
+.dashboard{
+	width: 100%;
+	box-shadow: 3px 6px 9px #888888;
+	height: 800px;
+	border: 10px solid #bdb7a8;
+	margin: 20px;
+	overflow-y: scroll;
+}
+
+#detail{
+	height: 150px;
+	width: 85%;
+	margin-left: 5px;
+	overflow-y: scroll;
+}
+
+#instruction{
+	height: 150px;
+	width: 85%;
+	margin-left: 5px;
+	overflow-y: scroll;
+}
+
+.overlay{
+    opacity:0.8;
+    background-color:#ccc;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-left: 45%;
+  margin-top: 40vh;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

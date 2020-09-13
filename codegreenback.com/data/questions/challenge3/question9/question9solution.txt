@@ -1,0 +1,32 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{
+    char phone[10];
+    int max = 0;
+    int num = 0;
+    cin>>phone;
+    cin>>num;
+    
+    
+    for(int i = 0 ;i < 11-num ; i++)
+    {
+        int pro = 1;
+        for(int j = i; j < num+i ; j++ )
+        {
+            int digit = phone[j] - '0';
+            
+            pro*= digit;
+            
+        }
+        
+        if(max < pro)
+        {
+            max = pro;
+        }
+    }
+    cout<< max;
+    return 0;
+}

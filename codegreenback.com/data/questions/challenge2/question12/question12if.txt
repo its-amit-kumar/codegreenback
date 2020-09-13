@@ -1,0 +1,1 @@
+<div>Number of elements of the array and Sum value with space seperated integers<br>Array elements with&nbsp;&nbsp;space seperated integers<br><br></div>

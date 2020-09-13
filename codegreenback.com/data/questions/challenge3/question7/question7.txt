@@ -1,0 +1,1 @@
+<div>CodeGreenBack Wants to know that how many of it employess have two same alphabets adjacent&nbsp;<br>to each other in there names.<br>If The name contains same alphabets adjacent to each other print 1 else 0&nbsp;</div>

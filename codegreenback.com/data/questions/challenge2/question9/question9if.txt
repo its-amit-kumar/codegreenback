@@ -1,0 +1,1 @@
+<div>1. First line should contain the size of the array <strong>N</strong><br>2. subsequent lines must contain the elements of the array<br>3. Last line should contain the required sum</div>

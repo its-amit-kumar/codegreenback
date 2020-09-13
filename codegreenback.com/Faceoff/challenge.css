@@ -1,0 +1,548 @@
+/* 
+
+#30e3ca
+
+#11999e
+
+#40514e
+
+*/
+
+
+#editor { 
+        position: absolute;
+        top: 20px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+.main{
+height: 700px;
+
+}
+.outputtxt{
+width: 60%;
+height: 100px;
+border: 2px solid #ada9a8;
+
+}
+#output{
+
+	padding-top: 10px;
+	padding-right: 0px;
+
+}
+
+#input{
+
+	padding-top: 10px;
+	padding-left: 0px;
+	width:100px;
+}
+
+.input{
+	height: 100px;
+}
+
+#options{
+
+	margin: 25px;
+
+}
+#outputdiv{
+	height: 150px;
+	width: 60%;
+}
+#CustomInput{
+	padding-top: 3px;
+}
+
+.LanguageSelector {
+    border: 1px solid #d4c4c3;
+    width: 150px;
+    background:#f2f2f2;
+    height: 25px;
+}
+.ThemeSelector {
+    border: 1px solid #d4c4c3;
+    width: 150px;
+    background:#f2f2f2;
+    height: 25px;
+}
+.LanguageSelector:hover{
+	cursor: pointer;
+}
+
+.ThemeSelector:hover{
+	cursor: pointer;;
+}
+
+#LanguageOption{
+   background: #f2f2f2;
+}
+
+#title{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 55px;
+	color: #5e5e5e;
+}
+
+#Title{
+	font-font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #3d3d3d;
+}
+
+#questionDisplayer{
+	box-shadow: 5px 10px 13px #888888;
+}
+
+#statement{
+	padding-left: px;
+	padding-right: 5px;
+}
+
+
+.text{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+#textEditorNavbar{
+	box-shadow: 5px 10px 13px #888888;
+}
+#editor{
+	box-shadow: 5px 10px 13px #888888;
+}
+.sample{
+	background: #e3e3e3;
+}
+.buttonn{
+    height: 50px;
+    width: 200px;
+    
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 5px 10px 13px #888888;
+}
+
+.successs{
+    background: green;
+    color: white;
+}
+
+.failuree{
+    background: #575757;
+    color: white;
+}
+
+.buttonn:hover{
+    cursor: pointer;
+}
+
+.buttonn:active{
+    box-shadow: 2px 4px 5px #888888;
+}
+
+.btntext{
+
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    
+
+}
+
+#loader {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: middle;
+}
+
+.highlight{
+	border: 10px solid #ff1100;
+	--box-shadow-color: #ff1100;
+	box-shadow: 0 0 25px var(--box-shadow-color);
+
+}
+
+
+.questionAlert{
+	height: 40px;
+	width: 260px;
+    color: #EC4D37;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.alert-displayer{
+	position: fixed;
+	left: 1%;
+	top:15%;
+	box-shadow: 5px 10px 13px #888888;
+	height: 30vh;
+	width: 12vw;
+
+}
+
+.c3-msg-div{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+    background-color: #8888889a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#output {
+  border: 1px solid #ada9a8;
+  height: 600px;
+    position: relative;
+    box-shadow: 5px 10px 13px #888888;
+
+}
+
+#TestCaseOption{
+  padding-left: 0px;
+  height: 585px;
+  overflow-y: scroll;
+  overflow-x: hidden; ;
+  border-right: 1px solid #ada9a8;
+}
+
+#editorinput {
+        border: 1px solid #d4c4c3;
+        height: 150px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+#editorYourOutput {
+        border: 1px solid #d4c4c3;
+        height: 150px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+#editorExpectedOutput {
+        border: 1px solid #d4c4c3;
+        height: 150px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+#LanguageSelector {
+    border: 1px solid #d4c4c3;
+    width: 150px;
+    background:#f2f2f2;
+    height: 25px;
+}
+
+#LanguageOption{
+   background: #f2f2f2;
+}
+
+.testCase {
+    width: 195px;
+    height: 60px;
+    display: block;
+    padding: 20px 30px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    font-size: 19px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.fail{
+    background: #333333;
+    color: #EC4D37;
+}
+
+#active{
+    background: white;
+    color: #353836;
+}
+
+.pass{
+    background: #00b51b;
+    color: white;
+}
+
+.testCase:hover {
+    color: #fff;
+    transition: 0.4s;
+    background:  rgba(0,204,153,0.7);
+    cursor: pointer;
+}
+
+#outputContainer{
+    padding-left: 40px;
+}
+
+.buttonn{
+    height: 50px;
+    width: 200px;
+    
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 5px 10px 13px #888888;
+}
+
+.successs{
+    background: green;
+    color: white;
+}
+
+.failuree{
+    background: #575757;
+    color: white;
+}
+
+.buttonn:hover{
+    cursor: pointer;
+}
+
+.buttonn:active{
+    box-shadow: 2px 4px 5px #888888;
+}
+
+.btntext{
+
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    
+
+}
+
+.result{
+
+    height: 50px;
+    width: 100%;
+    border: 1px solid #d4c4c3;
+
+
+}
+
+.timer{
+    position: fixed;
+    left: 1624px;
+    top:90px;
+}
+
+
+
+/* typing balls */
+
+.circle-type {
+  display: inline-block;
+  background-color: orange;
+  height: 15px;
+  width: 15px;
+  border-radius: 25px;
+}
+
+#container-typing {
+    margin: 0 auto;
+  height: 200px;
+  margin-top: 50px;
+  position: absolute;
+  top:30%;
+  left: 35%;
+}
+
+
+#container-not-typing{
+    margin: 0 auto;
+    height: 200px;
+    margin-top: 50px;
+    position: absolute;
+    top:30%;
+    left: 35%;
+}
+
+#container-code-running{
+    margin: 0 auto;
+    height: 200px;
+    margin-top: 50px;
+    position: absolute;
+    top:26%;
+    left: 32%;
+}
+
+#container-code-error{
+    margin: 0 auto;
+    height: 200px;
+    margin-top: 50px;
+    position: absolute;
+    top:22%;
+    left: 25%;
+}
+
+
+#container-code-success
+{
+        margin: 0 auto;
+    height: 200px;
+    margin-top: 50px;
+    position: absolute;
+    top:22%;
+    left: 25%;
+}
+#ball-1{
+  -webkit-animation-name: bounce1;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+}
+#ball-2{
+  -webkit-animation-name: bounce1;
+  -webkit-animation-delay: 1.1s;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+}
+#ball-3{
+  -webkit-animation-name: bounce1;
+  -webkit-animation-delay: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce1 {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(23px);
+  }
+  60% {
+    transform: translateY(-25px);
+  }
+  80%{
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/*.............................................. header................................................ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.challenge-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+	height: 8em;
+	background: rgb(17,153,158);
+	background: linear-gradient(90deg, rgba(17,153,158,1) 0%, rgba(255,255,255,1) 51%, rgba(48,227,202,1) 100%);
+	z-index: 10000;
+	
+    
+}
+
+.cgb-logo{
+    position: absolute;
+    top: 15%;
+    left: 2%;
+}
+
+.cgb-logo img {
+    width: 5em;
+}
+
+.challenge-vs{
+    width: 5em;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    margin: 0 auto;
+}
+
+.challenge-vs img{
+    width: 6em;
+}
+
+.oppo-1{
+    position: absolute;
+    left: 35%;
+    top:38%;
+    width: 10vw;
+    text-align:center
+}
+.oppo-2{
+    position: absolute;
+    left: 51%;
+    top:38%;
+    width: 10vw;
+    text-align:center
+}
+
+.oppo-1 p, .oppo-2 p {
+    font-size: 1.7em;
+    text-overflow: clip;
+    word-break: break-all;
+}
+
+.challenge-cc-img{
+    position: absolute;
+    right: 12%;
+    top: 5%;
+}
+
+.challenge-cc-img img {
+    width: 6em;
+}
+
+.challenge-cc-bet{
+    position: absolute;
+    right: 10%;
+    top: 31%;
+}
+
+.challenge-cc-bet p {
+    font-size: 1.7em;
+}
+
+/* 
+
+#30e3ca
+
+#11999e
+
+#40514e
+
+*/

@@ -1,0 +1,1 @@
+<ul><li>The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.</li><li>The first line of each test case contains a single integer N.</li><li>The second line contains a single string S with length N.</li></ul><div><br></div>

@@ -1,0 +1,28 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{
+    char name[100];
+    cin >> name;
+    int len = 0;
+    
+    for(int i = 0 ; name[i] != '\0' ; i++)
+    {
+        len++;
+        
+    }
+    
+    for(int i = 0 ; i<len-1 ; i++)
+    {
+        if(name[i] == name[i+1])
+        {
+            cout<<1;
+            return 0 ;
+        }
+    }
+    cout << 0;
+    
+    return 0;
+}

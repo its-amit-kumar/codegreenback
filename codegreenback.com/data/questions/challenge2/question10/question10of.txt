@@ -1,0 +1,2 @@
+<div>For each test case, print a single line containing two space-separated integers x and y.</div>
+

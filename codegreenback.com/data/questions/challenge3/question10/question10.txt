@@ -1,0 +1,1 @@
+<div>Sam is tasked with finding whether there are three elements from an array of integer whose sum equals to a given integer. If such a triplet is found then Sam should answer "Yes" or else his answer should be "No". Can you help Sam in completing his task ?<br><br></div>

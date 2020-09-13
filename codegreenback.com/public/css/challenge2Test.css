@@ -1,0 +1,185 @@
+.questions{
+	float: left;
+	height: 1000px;
+	width: 300px;
+}
+
+#question{
+	color: white;
+	height: 100px;
+	width: 300px;
+	background-color: #3b3b3b;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	font-size: 25px;
+	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;
+  	transition: .5s;
+}
+
+.questionText{
+	position: relative;
+	top:37px;
+
+
+}
+
+#question:hover{
+	background-color:rgba(0,204,153,0.7); 
+	cursor: pointer;
+	color: #3b3b3b;
+}
+
+
+.questionDisplayer{
+	display: inline-block;
+	height: 993px;
+	width: 800px;
+}
+
+.challenge{
+	box-shadow: 5px 10px 13px #888888;
+}
+
+#afterClickaddup{
+
+	color: white;
+	height: 100px;
+	width: 300px;
+	background-color: white;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	font-size: 25px;
+	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;
+  	color: #3b3b3b;
+
+}
+
+#Title{
+	font-font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #3d3d3d;
+	position: relative;
+	left: 10px;
+}
+
+#title{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 55px;
+	color: #5e5e5e;
+}
+
+.sample{
+	background: #e3e3e3;
+	position: relative;
+	left: 20px;
+}
+
+.image{
+	position: relative;
+	top:110px;
+	left: 225px;
+	height: 400px;
+	width: 450px;
+}
+
+.challengeDescription{
+	position: relative;
+	top:130px;
+	width: 400px;
+	left: 255px;
+	text-align: justify;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #9c9c9c;
+}
+
+#top, #bottom, #left, #right {
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 5px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 5px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+#demo{
+	box-shadow: 3px 6px 9px #888888;
+}
+
+.text{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	position: relative;
+	left: 20px;
+}
+
+.timer{
+	position: relative;
+	left: 1074px;
+	bottom: 12px;
+}
+
+.buttonn{
+    height: 50px;
+    width: 200px;
+    
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 5px 10px 13px #888888;
+}
+
+.buttonn:hover{
+    cursor: pointer;
+}
+
+.buttonn:active{
+    box-shadow: 2px 4px 5px #888888;
+}
+
+.btntext{
+
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    
+
+}
+
+.successs{
+    background: green;
+    color: white;
+}
+
+#attemptChallenge{
+	position: relative;
+	left: 700px;
+	top:10px;
+}
+
+.challengeHeading{
+	font-size: 55px;
+	font-weight: bolder;
+	color: #5e5e5e;
+
+}

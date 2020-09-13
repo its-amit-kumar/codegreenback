@@ -1,0 +1,1 @@
+<div>Build a staircase with <strong>hashes(#) </strong>for a given integer <strong>n.</strong></div>
